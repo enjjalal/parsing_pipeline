@@ -1,0 +1,42 @@
+Automated Parsing Pipeline for EDI/XML/Edifact Files
+
+PROJECT PLAN:
+
+Smart detection - Analyze file content patterns
+Three parsers - EDI, XML, Edifact with proper field extraction
+Database - Store parsed data with relationships
+Validation - Basic schema checks
+CLI - Simple command interface
+Error handling - Graceful failures
+Logging - Basic logging
+
+STAGE 1 COMPLETED:
+✅ Smart File Detection - Analyzes file content patterns to identify EDI, XML, and Edifact files
+✅ SQLite Database - Store parsed data with relationships
+✅ Error Handling - Graceful failures
+✅ Logging - Basic logging
+
+NEXT STAGES:
+- Three parsers - EDI, XML, Edifact with proper field extraction
+- Validation - Basic schema checks
+- CLI - Simple command interface
+
+TECHNOLOGY STACK:
+- Python 3.11+
+- SQLite database
+- lxml for XML parsing
+- pydantic for validation
+- click for CLI interface
+- python-magic for file detection
+
+PROJECT STRUCTURE:
+parsing_pipeline/
+├── src/
+│   ├── detector.py      # File type detection
+│   ├── database.py      # SQLite operations
+│   └── __init__.py
+├── sample_files/        # Test files
+├── config.py           # Configuration
+├── requirements.txt    # Dependencies
+├── test_detection.py  # Test script
+└── README.md
