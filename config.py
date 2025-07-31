@@ -19,7 +19,7 @@ FILE_PATTERNS = {
     },
     "EDIFACT": {
         "extensions": [".edi", ".edifact"],
-        "content_patterns": ["UNB*", "UNG*", "UNH*", "UNT*", "UNE*", "UNZ*"]
+        "content_patterns": ["UNB+", "UNG+", "UNH+", "UNT+", "UNE+", "UNZ+"]
     }
 }
 
